@@ -1,5 +1,5 @@
 <!doctype HTML>
-<html> 
+<html>
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
@@ -9,7 +9,7 @@
 			     <a-asset-item id="model-mtl" src="./obj/3d-model.mtl"></a-asset-item>
 	  </a-assets>
 	  <a-marker type="barcode" value="0">
-	     <a-obj-model src="#model-obj" mtl="#model-mtl" scale="0.01 0.01 0.01"  rotation="90 0 0"></a-obj-model>
+	     <a-obj-model src="#model-obj" mtl="model-mtl" scale="0.01 0.01 0.01"></a-obj-model>
           <a-box position='0 0.5 0' material='color: yellow;'></a-box>
       </a-marker>
       <a-entity camera></a-entity>
